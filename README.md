@@ -28,7 +28,7 @@ A modern weather application that provides real-time weather information with a 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/dushyanth96/weather-app.git
 ```
 
 2. Get your API key from [OpenWeatherMap](https://openweathermap.org/api)
