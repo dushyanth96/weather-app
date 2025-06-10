@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <!-- External CSS files for styling -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="togglestyle.css">
 </head>
 <body>
-    <div class="background"></div>
+    
+    
+    <!-- Navigation bar containing logo and controls -->
     <nav>
         <div class="logo">
             <h1>Weather App</h1>
         </div>
         <div class="nav-links">
+            <!-- Temperature unit toggle (Celsius/Fahrenheit) -->
             <div class="temp-unit">
                 <div>
                     <label>
@@ -26,10 +31,13 @@
                     </label>
                 </div>
             </div>
+            <!-- Theme toggle switch with sun/moon animation -->
             <label class="switch theme-switch">
               <input id="input" type="checkbox"  />
               <div class="slider round">
+                <!-- Sun/Moon animation elements -->
                 <div class="sun-moon">
+                  <!-- Moon dots -->
                   <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="50"></circle>
                   </svg>
@@ -39,6 +47,7 @@
                   <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="50"></circle>
                   </svg>
+                  <!-- Sun rays -->
                   <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="50"></circle>
                   </svg>
@@ -49,6 +58,7 @@
                     <circle cx="50" cy="50" r="50"></circle>
                   </svg>
             
+                  <!-- Cloud elements for animation -->
                   <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="50"></circle>
                   </svg>
@@ -68,6 +78,7 @@
                     <circle cx="50" cy="50" r="50"></circle>
                   </svg>
                 </div>
+                <!-- Stars for night mode animation -->
                 <div class="stars">
                   <svg id="star-1" class="star" viewBox="0 0 20 20">
                     <path
@@ -96,19 +107,25 @@
         </div>
     </nav>
    
+    <!-- Main container for weather information -->
     <div class="container">
+        <!-- Search section with input and location buttons -->
         <div class="search">
             <input type="text" placeholder="Enter the city name" spellcheck="false">
             <button><img class="search-img" src="images/s1.png"></button>
             <button class="location-btn"><img class="location-img" src="images/location.png" alt=""></button>
         </div>
+        
+        <!-- Weather information display section -->
         <div class="weather">
             <img src="images/rain.png" class="weather-icon">
             <p class="weather-type">Rainy</p>
             <h1 class="temp">--°C</h1>
             <h2 class="city">Your City</h2>
         
+            <!-- Weather details section -->
             <div class="details">
+                <!-- Humidity information -->
                 <div class="col">
                     <img src="images/humidity.png" alt="">
                     <div>
@@ -116,30 +133,32 @@
                         <p>Humidity</p>
                     </div>
                 </div>
+                <!-- Wind speed information -->
                 <div class="col">
                         <img src="images/wind.png" alt="">
                         <div>
                             <p class="wind">--km/h</p>
                             <p>Wind Speed</p>
                         </div>
-                    
                 </div>
-                
             </div>
+            <!-- Pressure information -->
             <div class="col pressure-col">
                 <img src="images/pressure.png" alt="">
                 <div>
                     <p class="pressure">--hPa</p>
                     <p>Pressure</p>
                 </div>
-            
-        </div>
-            
+            </div>
         </div>
     </div>
+    
+    <!-- Footer section -->
     <footer>
       <p>Made by <u>Dushyanth Pragada</u></p>
     </footer>
+    
+    <!-- JavaScript file for functionality -->
     <script src="index.js"></script>
 </body>
 </html>
