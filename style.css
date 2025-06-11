@@ -115,8 +115,9 @@ label span {
     background:rgba(0,0,0,0.4);
     color:#fff;
     margin: 20px auto;
+    margin-bottom: 10px;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 35px 30px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 0.5s ease-in;
@@ -126,6 +127,7 @@ label span {
 .container:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    
 }
 
 /* Search Section Styles */
@@ -425,9 +427,14 @@ label span {
 footer{
     margin-top: auto;
     text-align: center;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px;
     color: #fff;
+    font-size: 14px;
     background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Dark Theme Styles */
@@ -436,7 +443,7 @@ body.dark {
 }
 
 body.dark .container {
-    background: rgba(0,0,0,0.6);
+    background: rgba(77, 77, 77, 0.7);
 }
 
 nav.dark{
@@ -447,14 +454,15 @@ nav.dark{
     background-color: #2c2c2c;
     color: #fff;
 }
-
-.bg-img.dark{
-    filter: brightness(0.7);
+.search-img.dark{
+    color: #fff;
+}
+.location-img.dark{
+    color: #fff;
 }
 
-.container.dark{
-    background: rgba(0,0,0,0.6);
-}
+
+
 
 
   
