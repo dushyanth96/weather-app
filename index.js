@@ -110,7 +110,7 @@ async function getWeatherByCoordinates(lat, lon) {
         weathericon.src = `images/${weatherMain}.png`;
         document.querySelector("body").style.backgroundImage = `url(bgimg/${weatherMain}.jpg)`;
         document.querySelector("body").classList.add("bg-img");
-         document.querySelector(".bg-img").position="fixed";
+        document.querySelector(".bg-img").position="fixed";
         
     } catch (error) {
         handleWeatherError(error);
@@ -165,7 +165,7 @@ async function checkweather(city){
         weathericon.src = `images/${weatherMain}.png`;
         document.querySelector("body").style.backgroundImage = `url(bgimg/${weatherMain}.jpg)`;
         document.querySelector("body").classList.add("bg-img");
-         document.querySelector(".bg-img").position="fixed";
+        document.querySelector(".bg-img").position="fixed";
         
     } catch (error) {
         handleWeatherError(error);
