@@ -19,6 +19,7 @@ body.bg-img{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    positon:fixed;
 }
 
 /* Navigation Bar Styles */
