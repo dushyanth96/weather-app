@@ -31,6 +31,7 @@ nav{
     background-color: rgba(0,0,0,0.4);
     color: #fff;
     width: 100%;
+    position:fixed;
 }
 
 /* Logo Styles */
